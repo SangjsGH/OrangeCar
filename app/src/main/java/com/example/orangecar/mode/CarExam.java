@@ -1,0 +1,136 @@
+package com.example.orangecar.mode;
+
+import java.io.Serializable;
+import java.util.List;
+
+public class CarExam implements Serializable{
+    /**
+     * reason : ok
+     * result : [{"id":"21","question":"这个标志是何含义？","answer":"4","item1":"平面交叉路口","item2":"环行平面交叉","item3":"注意交互式道路","item4":"注意分离式道路","explains":"注意分离式道路：用以警告车辆驾驶人注意前方平面交叉的被交道路是分离式道路。","url":"http://images.juheapi.com/jztk/c1c2subject1/21.jpg"},{"id":"22","question":"这个标志是何含义？","answer":"1","item1":"丁字交叉路口预告","item2":"道路分叉处预告","item3":"Y型交叉路口预告","item4":"十字交叉路口预告","explains":"你看它长的多像丁字。","url":"http://images.juheapi.com/jztk/c1c2subject1/22.jpg"},{"id":"23","question":"这个标志是何含义？","answer":"1","item1":"地点距离","item2":"行驶路线","item3":"终点地名","item4":"行驶方向","explains":"你看那个地点名和KM公里多明显，所以本题的答案是地点距离。如果有箭头的一半是行驶方向。","url":"http://images.juheapi.com/jztk/c1c2subject1/23.jpg"},{"id":"27","question":"这个标志是何含义？","answer":"3","item1":"直行和左转车道","item2":"直行和辅路出口车道","item3":"直行和右转合用车道","item4":"分向行驶车道","explains":"表示只准一切车辆直行和向右转弯。此标志设在车辆必须直行和向右转弯）的路口以前适当位置。","url":"http://images.juheapi.com/jztk/c1c2subject1/27.jpg"},{"id":"38","question":"这个标志是何含义？","answer":"4","item1":"乡道编号","item2":"县道编号","item3":"省道编号","item4":"国道编号","explains":"乡道是白底Y字开头的，县道是白底X开头的，省道是黄底的，国道是红底的。","url":"http://images.juheapi.com/jztk/c1c2subject1/38.jpg"},{"id":"43","question":"这个标志是何含义？","answer":"4","item1":"左转行驶车道","item2":"直线行驶车道","item3":"右转行驶车道","item4":"分向行驶车道","explains":"同向多车道的公路一般都设计了分向行驶车道，正常行驶过程中可以变更车道，当你行驶至路口时要变换到你要行驶的车道。例如要左转弯时要提前变更车道至左转弯车道；要右转弯时要提前变更车道至右转弯车道，不能占用他人行车道，以最大限度的保障通行。","url":"http://images.juheapi.com/jztk/c1c2subject1/43.jpg"},{"id":"58","question":"这个标志是何含义？","answer":"4","item1":"右侧通行","item2":"左侧通行","item3":"向右行驶","item4":"环岛行驶","explains":"环岛行驶：表示只准车辆靠右环行。此标志设在环岛面向路口来车方向适当位置。","url":"http://images.juheapi.com/jztk/c1c2subject1/58.jpg"},{"id":"64","question":"这个标志是何含义？","answer":"3","item1":"环行交叉路口预告","item2":"十字交叉路口预告","item3":"Y型交叉路口预告","item4":"丁字交叉路口预告","explains":"俩个箭头加上你来的道路形成一个Y字。","url":"http://images.juheapi.com/jztk/c1c2subject1/64.jpg"},{"id":"82","question":"这个标志是何含义？","answer":"4","item1":"会车时停车让右侧车先行","item2":"右侧道路禁止车通行","item3":"前方是双向通行路段","item4":"会车时停车让对方车先行","explains":"会车时停车让对方车先行：表示车辆会车时，必须停车让对方车先行。设置在会车有困难的狭窄路段的一端或由于某种原因只能开放一条车道作双向通行路段的一端。","url":"http://images.juheapi.com/jztk/c1c2subject1/82.jpg"},{"id":"86","question":"这个标志是何含义？","answer":"4","item1":"左转让行","item2":"直行单行路","item3":"向右单行路","item4":"向左单行路","explains":"表示一切车辆向左单向行驶。此标志设在单行路的路口和入口处的适当位置。","url":"http://images.juheapi.com/jztk/c1c2subject1/86.jpg"},{"id":"90","question":"这个标志是何含义？","answer":"2","item1":"路面不平","item2":"路面高突","item3":"路面低洼","item4":"驼峰桥","explains":"路面高突：用以提醒车辆驾驶人减速慢行。设在路面突然高突以前适当位置。","url":"http://images.juheapi.com/jztk/c1c2subject1/90.jpg"},{"id":"95","question":"这个标志是何含义？","answer":"1","item1":"十字交叉路口","item2":"环行交叉路口","item3":"T型交叉路口","item4":"Y型交叉路口","explains":"十字交叉路口：除了基本形十字路口外，还有部分变异的十字路口，如：五路交叉路口、变形十字路口、变形五路交叉路口等。五路以上的路口均按十字路口对待。","url":"http://images.juheapi.com/jztk/c1c2subject1/95.jpg"},{"id":"103","question":"这个路面数字标记是何含义？","answer":"3","item1":"保持车距标记","item2":"最小间距标记","item3":"速度限制标记","item4":"道路编号标记","explains":"<p><img src=http://tp.mnks.cn/tp_321.jpg>\r<br/>限制速度\r<br/><img src=http://tp.mnks.cn/tp_322.jpg>\r<br/>限制最高速度\r<br/><img src=http://tp.mnks.cn/tp_323.jpg>\r<br/>限制最低速度<\/p>","url":"http://images.juheapi.com/jztk/c1c2subject1/103.jpg"},{"id":"105","question":"遇到这种情况时怎样行驶？","answer":"4","item1":"加速进入两侧车道行驶","item2":"进入右侧车道行驶","item3":"减速进入两侧车道行驶","item4":"禁止车辆在两侧车道通行","explains":"两侧车道都是红灯，都不可以通行，所以是禁止车辆在两侧车道通行。","url":"http://images.juheapi.com/jztk/c1c2subject1/105.jpg"},{"id":"111","question":"路中白色虚线是什么标线？","answer":"4","item1":"禁止跨越对向车道中心线","item2":"限制跨越对向车道中心线","item3":"单向行驶车道分界中心线","item4":"可跨越同向车道中心线","explains":"白色表示同向两车道之间的标线，虚线可跨越超车。","url":"http://images.juheapi.com/jztk/c1c2subject1/111.jpg"},{"id":"126","question":"这个标志预告什么？","answer":"4","item1":"高速公路服务区预告","item2":"高速公路避险处预告","item3":"高速公路客车站预告","item4":"高速公路停车场预告","explains":"<p><img src=http://tp.mnks.cn/tp_283.jpg>\r<br/>高速公路停车区\r<br/><img src=http://tp.mnks.cn/tp_284.jpg>\r<br/>高速公路停车场\r<br/><img src=http://tp.mnks.cn/tp_282.jpg>\r<br/>高速公路服务区预告<\/p>","url":"http://images.juheapi.com/jztk/c1c2subject1/126.jpg"},{"id":"128","question":"黄灯持续闪烁，表示机动车可以加速通过。","answer":"2","item1":"正确","item2":"错误","item3":"","item4":"","explains":"黄灯持续闪烁，表明已经越过停止线的车辆可以行使，没越过停止线的车辆要停车等待，机动车不能加速通过。","url":""},{"id":"140","question":"这个标志是何含义？","answer":"3","item1":"内部停车场","item2":"专用停车场","item3":"露天停车场","item4":"室内停车场","explains":"如果P字上边没有遮挡就是露天停车场。","url":"http://images.juheapi.com/jztk/c1c2subject1/140.jpg"},{"id":"141","question":"这个标志是何含义？","answer":"2","item1":"直行车道","item2":"只准直行","item3":"单行路","item4":"禁止直行","explains":"只准直行：表示只准一切车辆直行。此标志设在直行的路口以前适当位置。","url":"http://images.juheapi.com/jztk/c1c2subject1/141.jpg"},{"id":"147","question":"这个标志是何含义？","answer":"1","item1":"应急避难场所","item2":"生活服务区","item3":"行人专用通道","item4":"横过道路设施","explains":"你看他的动作时在跑，所以是紧急的情况，所以答案是A。应急避难场所是应对突发公共事件的一项灾民安置措施，是现代化大城市用于民众躲避火灾、爆炸、洪水、地震、疫情等重大突发公共事件的安全避难场所。","url":"http://images.juheapi.com/jztk/c1c2subject1/147.jpg"},{"id":"148","question":"这个标志是何含义？","answer":"3","item1":"禁止车辆掉头","item2":"禁止向左变道","item3":"禁止向左转弯","item4":"禁止驶入左车道","explains":"禁止向左转弯：表示前方路口禁止一切车辆向左转弯。此标志设在禁止向左转弯的路口前适当位置","url":"http://images.juheapi.com/jztk/c1c2subject1/148.jpg"},{"id":"158","question":"图中圈内三角填充区域是什么标线？","answer":"3","item1":"停车线","item2":"减速线","item3":"导流线","item4":"网状线","explains":"导流线的形式主要为一个或几个根据路口地形设置的白色V形线或斜纹线区域，表示车辆必须按规定的路线行驶，不得压线或越线行驶。 主要用于过宽、不规则或行驶条件比较复杂的交叉路口,立体交叉的匝道口或其他特殊地点。","url":"http://images.juheapi.com/jztk/c1c2subject1/158.jpg"},{"id":"161","question":"图中圈内白色横实线是何含义？","answer":"4","item1":"待转线","item2":"减速线","item3":"让行线","item4":"停止线","explains":"<p><img src=http://tp.mnks.cn/tp_332.jpg>\r<br/>停止线\r<br/><img src=http://tp.mnks.cn/tp_333.jpg>\r<br/>停车让行线\r<br/><img src=http://tp.mnks.cn/tp_334.jpg>\r<br/>减速让行线<\/p>","url":"http://images.juheapi.com/jztk/c1c2subject1/161.jpg"},{"id":"162","question":"这一组交通警察手势是什么信号？","answer":"3","item1":"左转弯待转信号","item2":"靠边停车信号","item3":"右转弯信号","item4":"减速慢行信号","explains":"手势题详解：http://www.jszks.com/onepage/16203.html","url":"http://images.juheapi.com/jztk/c1c2subject1/162.jpg"},{"id":"167","question":"这个标志是何含义？","answer":"1","item1":"旅游区距离","item2":"旅游区方向","item3":"旅游区符号","item4":"旅游区类别","explains":"遇此类标志是指旅游区的距离还有多远（亲不要激动 安全第一 慢行","url":"http://images.juheapi.com/jztk/c1c2subject1/167.jpg"},{"id":"192","question":"驾驶机动车在路口直行遇到这种信号灯应该怎样行驶？","answer":"4","item1":"进入路口等待","item2":"左转弯行驶","item3":"加速直行通过","item4":"不得越过停止线","explains":"亮红灯时，车辆应该在停止线内停车等待。","url":"http://images.juheapi.com/jztk/c1c2subject1/192.jpg"},{"id":"194","question":"驾驶机动车在路口遇到这种信号灯亮时，要在停止线前停车�望。","answer":"2","item1":"正确","item2":"错误","item3":"","item4":"","explains":"绿灯，赶紧的走你。","url":"http://images.juheapi.com/jztk/c1c2subject1/194.jpg"},{"id":"213","question":"可以从这个位置直接驶入高速公路行车道。","answer":"2","item1":"正确","item2":"错误","item3":"","item4":"","explains":"应该按照标线行驶，不要乱开。","url":"http://images.juheapi.com/jztk/c1c2subject1/213.jpg"},{"id":"216","question":"驾驶机动车在铁路道口、桥梁、陡坡、隧道或者容易发生危险的路段不能掉头。","answer":"1","item1":"正确","item2":"错误","item3":"","item4":"","explains":"《中华人民共和国道路交通安全法实施条例》第四十九条第一款：<br/>\u201c机动车在有禁止掉头或者禁止左转弯标志、标线的地点以及在铁路道口、人行横道、桥梁、急弯、陡坡、隧道或者容易发生危险的路段,不得掉头。\u201d","url":""},{"id":"256","question":"这个标志是何含义？","answer":"3","item1":"高速公路里程编号","item2":"高速公路界牌编号","item3":"高速公路命名编号","item4":"高速公路路段编号","explains":"高速公路命名编号：用于指示高速公路的编号，作为指路标志的路线信息，出现在高速公路、城市快速路、一般道路指路标志版面中。查看高速公路标志大全：http://www.jszks.com/onepage/16721.html","url":"http://images.juheapi.com/jztk/c1c2subject1/256.jpg"},{"id":"267","question":"车辆在拥挤路段低速行驶时，遇其他车辆强行插队，应怎样做？","answer":"4","item1":"鸣喇叭警告，不得进入","item2":"加速行驶，紧跟前车，不让其进入","item3":"挤靠\u201c加塞\u201d车辆，逼其离开","item4":"主动礼让，确保行车安全","explains":"遇到其他车辆强行插队，如果我们不礼让的话就会有发生事故的风险。做文明司机，主动礼让，确保安全。","url":""},{"id":"280","question":"这个路段可以在非机动车道上临时停车。","answer":"2","item1":"正确","item2":"错误","item3":"","item4":"","explains":"在设有禁停标志、标线的路段，在机动车道与非机动车道、人行道之间设有隔离设施的路段以及人行横道、施工地段，不得停车。","url":"http://images.juheapi.com/jztk/c1c2subject1/280.jpg"},{"id":"299","question":"行车中遇到对向来车占道行驶，应怎样做？","answer":"3","item1":"逼对方靠右行驶","item2":"用大灯警示对方","item3":"主动给对方让行","item4":"紧靠道路中心行驶","explains":"记住文明驾驶，礼貌让行。不开赌气车，安全第一。","url":""},{"id":"326","question":"这一组交通警察手势是什么信号？","answer":"2","item1":"左转弯信号","item2":"左转弯待转信号","item3":"减速慢行信号","item4":"右转弯信号","explains":"手势题详解：http://www.jszks.com/onepage/16203.html","url":"http://images.juheapi.com/jztk/c1c2subject1/326.jpg"},{"id":"328","question":"路口最前端的双白虚线是什么含义？","answer":"3","item1":"等候放行线","item2":"停车让行线","item3":"减速让行线","item4":"左弯待转线","explains":"<p><img src=http://tp.mnks.cn/tp_332.jpg><br/>停止线<\/p><p><img src=http://tp.mnks.cn/tp_333.jpg><br/>停车让行线<\/p><p><img src=http://tp.mnks.cn/tp_334.jpg><br/>减速让行线<\/p>","url":"http://images.juheapi.com/jztk/c1c2subject1/328.jpg"},{"id":"331","question":"驾驶人有使用其他车辆检验合格标志嫌疑的，交通警察可依法扣留车辆。","answer":"1","item1":"正确","item2":"错误","item3":"","item4":"","explains":"《道路交通安全违法行为处理程序规定》第二十五条规定，有下列情形之一的，依法扣留车辆：有伪造、变造或者使用伪造、变造的机动车登记证书、号牌、行驶证、检验合格标志、 保险标志、驾驶证或者<b>使用其他车辆的机动车登记证书、号牌、行驶证、检验合格标志、保险标志嫌疑的。<\/b>","url":""},{"id":"335","question":"道路交通违法行为累积记分周期是多长时间？","answer":"2","item1":"14个月","item2":"12个月","item3":"6个月","item4":"10个月","explains":"《公安部令第123号》第五十五条：道路交通安全违法行为累积记分周期（即记分周期）为12个月，满分为12分，从机动车驾驶证初次领取之日起计算。","url":""},{"id":"345","question":"下雨后路面湿滑，车辆行驶中紧急制动时，容易导致什么？","answer":"1","item1":"发生侧滑、引发交通事故","item2":"因视线模糊而撞车","item3":"不被其他车辆驾驶人发现","item4":"引起发动机熄火","explains":"<b>下雨时路面潮湿，轮胎与路面之间的滑动摩擦因素小，相应的摩擦力也要变小。<\/b>所以紧急制动时，汽车轮胎停止滚动，而向前滑动。或者说滑动摩擦力不能有效减慢汽车速度，导致汽车还要向前滑出很大段距离。因此天雨路滑，宜减速行驶。","url":""},{"id":"346","question":"遇到这种情形时要停车避让行人。","answer":"1","item1":"正确","item2":"错误","item3":"","item4":"","explains":"根据《道路交通安全法》第四十七条，机动车行经没有交通信号的道路时，遇行人横过道路，应当避让。","url":"http://images.juheapi.com/jztk/c1c2subject1/346.jpg"},{"id":"372","question":"机动车在高速公路行驶，下列做法正确的是？","answer":"1","item1":"非紧急情况时不得在应急车道行驶或者停车","item2":"可在减速车道或加速车道上超车、停车","item3":"可在紧急停车带停车装卸货物","item4":"可在路肩停车上下人员","explains":"紧急车道只能在紧急情况下才能使用，非紧急情况不得占用。","url":""},{"id":"386","question":"行车中遇抢救伤员的救护车从本车道逆向驶来时，应怎样做？","answer":"1","item1":"靠边减速或停车让行","item2":"占用其他车道行驶","item3":"加速变更车道避让","item4":"在原车道内继续行驶","explains":"遇到正在执行任务的特种车辆，应当靠边减速或停车让行，为其让路。","url":""},{"id":"403","question":"车辆上坡行驶，要提前观察路况、坡道长度，及时减挡使车辆保持充足的动力。","answer":"1","item1":"正确","item2":"错误","item3":"","item4":"","explains":"提前观察路况可以增加行车时的预见性，及时减档保持充足的动力才能顺利上坡。低档速度慢，但是动力足，才能保证不熄火，顺利上坡。","url":""},{"id":"415","question":"雨天路面湿滑，车辆制动距离增大，行车中尽量使用紧急制动减速。","answer":"2","item1":"正确","item2":"错误","item3":"","item4":"","explains":"因为路面比较滑，如果紧急制动（急刹车）容易造成车辆失控，最好不要紧急制动。","url":""},{"id":"429","question":"车辆通过学校和小区应注意观察标志标线，低速行驶，不要鸣喇叭。","answer":"1","item1":"正确","item2":"错误","item3":"","item4":"","explains":"<b>学校区域和居民区通常禁止鸣笛，减少噪音，<\/b>以免影响居民生活和学生学习。同时，这些地方人流量大，要时时留意交通状况，减速慢行。","url":""},{"id":"437","question":"驾驶人行车中看到注意儿童标志的时候，应怎样做？","answer":"4","item1":"加速行驶","item2":"绕道行驶","item3":"保持正常车速行驶","item4":"谨慎选择行车速度","explains":"看见儿童标志，需谨慎驾驶，避免伤及儿童。","url":""},{"id":"444","question":"这个导向箭头是何含义？","answer":"2","item1":"指示直行或掉头","item2":"指示直行或左转弯","item3":"指示直行或向左变道","item4":"指示向左转弯或掉头","explains":"左或者直行","url":"http://images.juheapi.com/jztk/c1c2subject1/444.jpg"},{"id":"457","question":"车辆驶入匝道后，迅速将车速提高到每小时60公里以上。","answer":"2","item1":"正确","item2":"错误","item3":"","item4":"","explains":"应该是从匝道进入高速公路加速车道，在加速车道里迅速将车速提高到每小时60公里以上，而不是匝道。","url":""},{"id":"471","question":"车辆涉水后，应保持低速行驶，怎样操作制动踏板，以恢复制动效果？","answer":"4","item1":"持续重踏","item2":"间断重踏","item3":"持续轻踏","item4":"间断轻踏","explains":"采用间断轻踏摩擦刹车片来加热蒸发水分，恢复制动","url":""},{"id":"525","question":"机动车发生碰撞时座椅安全带主要作用是什么？","answer":"3","item1":"保护驾乘人员颈部","item2":"保护驾乘人员胸部","item3":"减轻驾乘人员伤害","item4":"保护驾乘人员腰部","explains":"安全带在紧急情况下，可以迅速拉紧把人束缚在座椅上，保证安全。可以减轻对驾乘人员的伤害。","url":""},{"id":"539","question":"（如图所示）这个符号的开关控制什么装置？","answer":"3","item1":"两侧车窗玻璃","item2":"电动车门","item3":"车门锁住开锁","item4":"儿童安全锁","explains":"你看那个长的多像一把钥匙，所以是车门锁住开锁。","url":"http://images.juheapi.com/jztk/c1c2subject1/539.jpeg"},{"id":"550","question":"如图所示，在这种情况下不能够超车的原因是什么？","answer":"4","item1":"前车速度过快","item2":"我方车速不足以超越前车","item3":"路中心为黄线","item4":"前车正在超车","explains":"按照规定，当前方车辆正在超车时，为了行车安全，驾驶员应该主动放弃超车。而图中蓝色车辆很明显在超车，因此选择D。","url":"http://images.juheapi.com/jztk/c1c2subject1/550.jpg"},{"id":"554","question":"记分满12分的驾驶人拒不参加学习和考试的将被公告驾驶证停止使用。","answer":"1","item1":"正确","item2":"错误","item3":"","item4":"","explains":"《道路交通安全法实施条例》第二十五条：机动车驾驶人记分达到12分，拒不参加公安机关交通管理部门通知的学习，也不接受考试的，由公安机关交通管理部门公告其机动车驾驶证停止使用。","url":""},{"id":"590","question":"如图所示，A车要在前方掉头行驶，可以在此处变换车道，进入左侧车道准备掉头。","answer":"2","item1":"正确","item2":"错误","item3":"","item4":"","explains":"图中虚线箭头代表的是车辆行驶路线，仔细虚线路径，可以看到变道时压到了白色实线。变道是不能压线的，因此图中A车要在前方掉头行驶，是不能在此处变换车道的。题目描述错误，本题答案为错。","url":"http://images.juheapi.com/jztk/c1c2subject1/590.jpg"},{"id":"610","question":"驾驶机动车在进出非机动车道时，最高速度不能超过多少？","answer":"4","item1":"40公里/小时","item2":"50公里/小时","item3":"60公里/小时","item4":"30公里/小时","explains":"机动车行驶中遇有下列情形之一的，最高行驶速度不得超过每小时30公里，其中拖拉机、电瓶车、轮式专用机械车不得超过每小时15公里：　　 \r<br/>（一）<b>进出非机动车道<\/b>，通过铁路道口、急弯路、窄路、窄桥时；　　 \r<br/>（二）掉头、转弯、下陡坡时；　　 \r<br/>（三）遇雾、雨、雪、沙尘、冰雹，能见度在50米以内时；　　 \r<br/>（四）在冰雪、泥泞的道路上行驶时；","url":""},{"id":"612","question":"机动车仪表板上（如图所示）亮时，不影响正常行驶。","answer":"2","item1":"正确","item2":"错误","item3":"","item4":"","explains":"图中报警灯是驻车制动器及系统故障指示灯。行车途中该灯亮起，表示制动系统出了问题或故障，机动车不能上路。题目描述错误，因此本题答案为错。","url":"http://images.juheapi.com/jztk/c1c2subject1/612.jpeg"},{"id":"614","question":"如图所示，在这种情况下准备进入环形路口时，为了保证车后车流的通畅，应加速超越红车进入路口。","answer":"2","item1":"正确","item2":"错误","item3":"","item4":"","explains":"在进入环形路口时，不得影响环岛内车辆的正常通行。因此应该按顺序进入环岛，不得加速超越。","url":"http://images.juheapi.com/jztk/c1c2subject1/614.jpg"},{"id":"623","question":"车辆后轮胎爆裂，车尾会摇摆不定，驾驶人应双手紧握转向盘，控制车辆保持直线行驶，减速停车。","answer":"1","item1":"正确","item2":"错误","item3":"","item4":"","explains":"<b>爆胎后，首先要控制住方向，保持直线行驶，再减速停车。<\/b>因为如果突然爆胎，瞬间靠右会导致与后方来车相撞，应该先保持直线行驶，再减速停车。","url":""},{"id":"647","question":"将转向灯开关向上提，左转向灯亮。","answer":"2","item1":"正确","item2":"错误","item3":"","item4":"","explains":"向上提：右转向灯亮；\r<br/>向下拉：左转向灯亮。\r<br/>题目描述及图片显示均错误，因此本题答案为错。","url":"http://images.juheapi.com/jztk/c1c2subject1/647.jpg"},{"id":"658","question":"路口转弯过程中，持续开启转向灯，主要是因为什么？","answer":"2","item1":"完成转弯动作前，关闭转向灯是习惯动作","item2":"让其他驾驶人知道您正在转弯","item3":"让其他驾驶人知道您正在超车","item4":"完成转弯动作前，关闭转向灯会对车辆造成损害","explains":"路口转弯过程中，持续开启转向灯，是为了提醒别的行人和车辆此车正在转弯，注意安全。直至转弯动作完成后，才能关闭转向灯。","url":""},{"id":"683","question":"如图所示，在这种情况下只要后方、对向无来车，可以掉头。","answer":"2","item1":"正确","item2":"错误","item3":"","item4":"","explains":"黄色的实线是不能压的，掉头必须要穿过黄线，所以，有黄色的实线是不能掉头的。","url":"http://images.juheapi.com/jztk/c1c2subject1/683.jpg"},{"id":"689","question":"持有小型汽车驾驶证的驾驶人，发生交通事故造成人员死亡承担同等以上责任未被吊销机动车驾驶证的，应当在本记分周期结束后三十日内到公安机关交通管理部门接受审验，同时应当申报身体条件情况。","answer":"1","item1":"","item2":"","item3":"","item4":"","explains":"规定以外准驾车型驾驶证的驾驶人，发生交通事故造成人员死亡承担同等以上责任未被吊销机动车驾驶证的，应当在本记分周期结束后三十日内到公安机关交通管理部门接受审验。","url":""},{"id":"700","question":"夜间行车，可选择下列哪个地段超车?","answer":"3","item1":"交叉路口","item2":"窄路窄桥","item3":"路宽车少","item4":"弯道陡坡","explains":"超车前，应选择视线良好、平直宽阔、左右均无障碍且前方路段200米范围内没有来车的道路，在保证安全的前提下方能超车。千万不要盲目超车。几个选项中，当然是选路宽车少的路段了。","url":""},{"id":"722","question":"安全头枕用于在发生追尾事故时保护驾驶人的头部不受伤害。","answer":"2","item1":"","item2":"","item3":"","item4":"","explains":"应该是减轻驾驶人头部伤害。","url":""},{"id":"773","question":"行至漫水路时，应当怎样做？","answer":"2","item1":"空挡滑行","item2":"低速通过涉水路段","item3":"高速通过，减少涉水时间","item4":"高挡位低速通过","explains":"《中华人民共和国道路交通安全法实施条例》第六十四条：<b>机动车行经漫水路或者漫水桥时，应当停车察明水情，确认安全后，低速通过。<\/b>","url":""},{"id":"775","question":"机动车仪表板上（如图所示）亮，提示发电机向蓄电池充电。","answer":"2","item1":"正确","item2":"错误","item3":"","item4":"","explains":"是蓄电池坏了不是电量不足，所以不是充电就能解决问题的，所以应该是充电系统出现故障。","url":"http://images.juheapi.com/jztk/c1c2subject1/775.jpeg"},{"id":"785","question":"在暂住地初次申领机动车驾驶证的，不能直接申领大型货车驾驶证。","answer":"1","item1":"","item2":"","item3":"","item4":"","explains":"在暂住地初次申领机动车驾驶证的，是可以直接申领大型货车驾驶证的。\r<br/>根据2016年4月1日起开始实行的驾驶证新规，取消了异地考驾照对A/B证的限制，A/B也可以在暂住地申领了，但是需要有当地的居住证或者暂住证。\r<br/>题目描述有误，因此本题答案应为错误。","url":""},{"id":"807","question":"这个标志的含义是提醒车辆驾驶人前方是过水路面或漫水桥路段。","answer":"1","item1":"正确","item2":"错误","item3":"","item4":"","explains":"警告标志：过水路面，应当减速慢行。用以提醒车辆驾驶人谨慎慢行。设在过水路面或漫水桥路段以前适当位置。","url":"http://images.juheapi.com/jztk/c1c2subject1/807.jpg"},{"id":"859","question":"这个标志是何含义？","answer":"2","item1":"预告宽度为3米","item2":"限制宽度为3米","item3":"解除3米限宽","item4":"限制高度为3米","explains":"限制宽度为3米：表示禁止装载宽度超过标志所示数值的车辆通行。此标志设在最大允许宽度受限制的地方。 以图为例：装载宽度不得超过3米","url":"http://images.juheapi.com/jztk/c1c2subject1/859.jpg"},{"id":"870","question":"驾驶机动车在高速公路上行驶，能见度小于200米时，与同车车道前车应保持100米以上的距离。","answer":"1","item1":"","item2":"","item3":"","item4":"","explains":"<b>能见度小于200米时，开启雾灯、近光灯、示廓灯和前后位灯，车速不得超过每小时60公里，与同车道前车保持100米以上的距离；<\/b>能见度小于100米时，开启雾灯、近光灯、示廓灯、前后位灯和危险报警闪光灯，车速不得超过每小时40公里，与同车道前车保持50米以上的距离；能见度小于50米时，开启雾灯、近光灯、示廓灯、前后位灯和危险报警闪光灯，车速不得超过每小时20公里，并从最近的出口尽快驶离高速公路。","url":""},{"id":"879","question":"驾驶机动车在山路行驶时，为了减少油耗，下坡时可以空挡滑行，并使用行车制动器控制速度。","answer":"2","item1":"","item2":"","item3":"","item4":"","explains":"下坡时用空档滑行容易烧坏变速器，非常危险，属于交通陋习。","url":""},{"id":"881","question":"路中心的黄色斜线填充是何含义？","answer":"2","item1":"单向行驶车道分界线","item2":"禁止跨越对向车行道分界线","item3":"双侧可跨越同向车道分界线","item4":"可跨越对向车道分界线","explains":"图中两侧车道很明显是不同方向的，并且双黄线是禁止跨越的，因此路中心的黄色斜线填充为禁止跨越对向车行道分界线。","url":"http://images.juheapi.com/jztk/c1c2subject1/881.jpg"},{"id":"886","question":"如图所示，驾驶机动车在路口遇到这种交通信号时，右转弯的车辆在不妨碍被放行的车辆、行人的情况下，可以通行。","answer":"1","item1":"","item2":"","item3":"","item4":"","explains":"驾驶机动车在路口遇到这种圆形交通信号时，右转弯的车辆在不妨碍被放行的车辆、行人的情况下，可以通行。","url":"http://images.juheapi.com/jztk/c1c2subject1/886.jpg"},{"id":"913","question":"驾驶机动车发生以下交通事故，哪种情况适用自行协商解决？","answer":"3","item1":"对方饮酒的","item2":"对事实及成因有争议的","item3":"未造成人身伤亡，对事实及成因无争议的","item4":"造成人身伤亡的","explains":"《中华人民共和国道路交通安全法实施条例》第八十六条规定:\u201c机动车与机动车、机动车与非机动车在道路上发生未造成人身伤亡的交通事故，当事人对事实及成因无争议的，在记录交通事故的时间、地点、对方当事人的姓名和联系方式、机动车牌号、驾驶证号、保险凭证号、碰撞部位，并共同签名后，撤离现场，自行协商损害赔偿事宜。当事人对交通事故事实及成因有争议的，应当迅速报警。\u201d","url":""},{"id":"915","question":"避让特种车辆使其顺利通过后，车辆应有序回到原车道继续行驶，不要尾随特种车辆，以免发生交通事故。","answer":"1","item1":"","item2":"","item3":"","item4":"","explains":"特种车辆本身车速较快，而且由于其特殊性，驾驶路线与常规车辆也不同。如果跟随特种车会十分危险，因此避让特种车后，要有序回到原车道继续行驶。","url":""},{"id":"943","question":"道路交通安全违法行为累积记分的周期是多长时间？","answer":"1","item1":"12个月","item2":"24个月","item3":"3个月","item4":"6个月","explains":"123号令第五十五条规定：道路交通安全违法行为<b>累积记分周期（即记分周期）为12个月<\/b>，满分为12分，从机动车驾驶证初次领取之日起计算。因此本题答案应为C。","url":""},{"id":"944","question":"如图所示，红圈中标记车辆使用灯光的方法是正确的。","answer":"2","item1":"","item2":"","item3":"","item4":"","explains":"《中华人民共和国道路交通安全法》第四十八条规定：在没有中心隔离设施或者没有中心线的道路上，夜间会车应当在距相对方向来车150米以外改用近光灯。\r<br/>途中车辆并没有在150米外切换近光灯，距离这么近仍是远光灯，因此是错误的行为。","url":"http://images.juheapi.com/jztk/c1c2subject1/944.jpg"},{"id":"945","question":"机动车驾驶人驾驶证有效期满换领驾驶证时，须提交县级以上医疗机构出具的身体条件证明。","answer":"1","item1":"","item2":"","item3":"","item4":"","explains":"《道路运输从业人员管理规定》规定：机动车驾驶人驾驶证有效期满换领驾驶证时，须提交县级以上医疗机构出具的身体条件证明。","url":""},{"id":"955","question":"机动车发生轻微财产损失的交通事故，对应当自行撤离现场而未撤离的，交通警察有权责令当事人撤离现场。","answer":"1","item1":"","item2":"","item3":"","item4":"","explains":"《中华人民共和国道路交通安全法》中第七十条第二、三款规定：\r<br/>在道路上发生交通事故，未造成人身伤亡，当事人对事实及成因无争议的，可以即行撤离现场，恢复交通，自行协商处理损害赔偿事宜；不即行撤离现场的，应当迅速报告执勤的交通警察或者公安机关交通管理部门。\r<br/>机动车发生轻微财产损失的交通事故，对应当自行撤离现场而未撤离的，交通警察有权责令当事人撤离现场。","url":""},{"id":"957","question":"如图所示，夜间驾驶机动车遇对方使用远光灯，无法看清前方路况时，以下做法正确的是什么？ ","answer":"3","item1":"保持行驶方向和车速不变","item2":"自己也打开远光灯行驶","item3":"降低车速，谨慎会车","item4":"加速通过，尽快摆脱眩目光线","explains":"夜间驾驶机动车遇对方使用远光灯，无法看清前方路况时，降低车速，谨慎会车，以免发生车祸、危险。","url":"http://images.juheapi.com/jztk/c1c2subject1/957.jpg"},{"id":"968","question":"已注册登记的机动车，改变车身颜色，机动车所有人不需要向登记地车辆管理所申请变更登记。","answer":"2","item1":"","item2":"","item3":"","item4":"","explains":"《中华人民共和国道路运输条例》说明，已注册登记的机动车，改变机动车车身颜色的应到公安交通管理部门申请变更登记。","url":""},{"id":"989","question":"这个标志是何含义？","answer":"2","item1":"左侧变窄","item2":"窄桥","item3":"窄路","item4":"右侧变窄","explains":"窄桥：用以警告车辆驾驶人注意前方桥面宽度变窄，应谨慎驾驶。设在桥面净宽较两端路面宽度变窄，且桥的净宽小于6 m的桥梁以前适当位置。","url":"http://images.juheapi.com/jztk/c1c2subject1/989.jpg"},{"id":"994","question":"这种停车标线含义是什么？","answer":"4","item1":"专用待客停车位","item2":"专用上下客停车位","item3":"机动车限时停车位","item4":"固定停车方向停车位","explains":"这是固定停车方向停车位，车头要按箭头方向停放。","url":"http://images.juheapi.com/jztk/c1c2subject1/994.jpg"},{"id":"1026","question":"驾驶机动车找不到停车位时可以借人行道停放。","answer":"2","item1":"正确","item2":"错误","item3":"","item4":"","explains":"《中华人民共和国道路交通安全法》第五十六条\u201c机动车应当在规定地点停放，禁止在人行道上停放机动车。\u201d","url":""},{"id":"1035","question":"在这段道路上不能掉头。","answer":"1","item1":"正确","item2":"错误","item3":"","item4":"","explains":"《道路交通安全法实施条例》第四十九条：机动车在有禁止掉头或者禁止左转弯标志、标线的地点以及在铁路道口、人行横道、桥梁、急弯、陡坡、隧道或者容易发生危险的路段，不得掉头。","url":"http://images.juheapi.com/jztk/c1c2subject1/1035.jpg"},{"id":"1047","question":"下长坡时，控制车速除了刹车制动以外还有什么有效的辅助方法？","answer":"2","item1":"挂入空挡滑行","item2":"利用发动机制动","item3":"关闭发动机熄火滑行","item4":"踏下离合器滑行","explains":"<b>发动机制动就是挂低档，让车利用低档位的惯性制动。<\/b>下长坡时，可以通过这种方式有效控制车速。","url":""},{"id":"1048","question":"如何通过这种交叉路口？","answer":"3","item1":"保持速度通过","item2":"鸣笛催促","item3":"减速慢行","item4":"加速通过","explains":"路旁有多名行人马上要横穿马路，一定要减速慢行，保证行人安全。","url":"http://images.juheapi.com/jztk/c1c2subject1/1048.jpg"},{"id":"1059","question":"车辆在下坡行驶时，可充分利用空挡滑行。","answer":"2","item1":"正确","item2":"错误","item3":"","item4":"","explains":"下坡时，绝对不能熄火或空档滑行。<b>如果下坡空档滑行，只靠刹车来控制车速，遇到连续下坡的时候可能会造成刹车负担过重，刹车片过热而失灵。<\/b>","url":""},{"id":"1071","question":"当驾驶车辆行经两侧有非机动车行驶且有积水的路面时，应怎样做？","answer":"1","item1":"减速慢行","item2":"正常行驶","item3":"加速通过","item4":"连续鸣喇叭","explains":"文明驾驶。减速行驶能够防止水溅到行人身上。","url":""},{"id":"1084","question":"驾驶人发现轮胎漏气，将车辆驶离主车道时，不要采用紧急制动，以免造成翻车或后车采取制动不及时导致追尾事故。","answer":"1","item1":"正确","item2":"错误","item3":"","item4":"","explains":"轮胎漏气时不能采取紧急制动，容易造成翻车。应控制住方向，慢慢停车。","url":""},{"id":"1085","question":"车辆行至泥泞或翻浆路段时，应停车观察，选择平整、坚实的路段缓慢通过。","answer":"1","item1":"正确","item2":"错误","item3":"","item4":"","explains":"泥泞翻浆路段行车容易发生侧滑，应该停车仔细观察后，降低车速，选择平整、坚实的路段缓慢通过。","url":""},{"id":"1120","question":"机动车仪表板上（如图所示）亮时，防抱死制动系统处于打开状态。","answer":"2","item1":"正确","item2":"错误","item3":"","item4":"","explains":"此标志为防抱死制动系统出现故障，应该停车进行全面检查。","url":"http://images.juheapi.com/jztk/c1c2subject1/1120.jpeg"},{"id":"1139","question":"驾驶机动车遇到前方车辆停车排队等候或缓慢行驶时怎么办？","answer":"3","item1":"可借道超车","item2":"占用对面车道","item3":"依次行驶","item4":"穿插等候的车辆","explains":"《道路交通安全法》第四十五条：<br/>机动车遇有前方车辆停车排队等候或者缓慢行驶时，不得借道超车或者占用对面车道，不得穿插等候的车辆。","url":""},{"id":"1155","question":"机动车仪表板上（如图所示）亮，提示行李舱开启。","answer":"2","item1":"正确","item2":"错误","item3":"","item4":"","explains":"后边为行李舱，前边为发动机舱。当机动车仪表板上该符号亮起，表示发动机舱开启。","url":"http://images.juheapi.com/jztk/c1c2subject1/1155.jpeg"},{"id":"1165","question":"这种标志的作用是警告车辆驾驶人前方有危险，谨慎通行。","answer":"1","item1":"正确","item2":"错误","item3":"","item4":"","explains":"黄色标志都是表示警告，第一张图警告前方T字路口，第二张图片表示急转弯，第三张图片表示前方道路变窄，要小心驾驶。","url":"http://images.juheapi.com/jztk/c1c2subject1/1165.jpg"},{"id":"1174","question":"这是什么交通标志？","answer":"1","item1":"两侧变窄","item2":"右侧变窄","item3":"左侧变窄","item4":"桥面变窄","explains":"两侧变窄：用以警告车辆驾驶人注意前方车行道或路面狭窄情况，遇有来车应予减速避让。设在双车道路面宽度缩减为6 m以下的路段起点前方。","url":"http://images.juheapi.com/jztk/c1c2subject1/1174.jpg"},{"id":"1185","question":"正在执行社区戒毒、强制隔离戒毒、社区康复措施，车辆管理所将注销其驾驶证。","answer":"1","item1":"正确","item2":"错误","item3":"","item4":"","explains":"机动车驾驶人具有下列情形之一的，车辆管理所应当注销其机动车驾驶证：<br/>（一）死亡的；<br/>（二）提出注销申请的；<br/>（三）丧失民事行为能力，监护人提出注销申请的；<br/>（四）身体条件不适合驾驶机动车的；<br/>（五）有器质性心脏病、癫痫病、美尼尔氏症、眩晕症、癔病、震颤麻痹、精神病、痴呆以及影响肢体活动的神经系统疾病等妨碍安全驾驶疾病的；<br/>（六）<b>被查获有吸食、注射毒品后驾驶机动车行为，正在执行社区戒毒、强制隔离戒毒、社区康复措施，或者长期服用依赖性精神药品成瘾尚未戒除的。<\/b>","url":""},{"id":"1197","question":"这个标志的含义是提醒车辆驾驶人前方是无人看守铁路道口。","answer":"1","item1":"正确","item2":"错误","item3":"","item4":"","explains":"无人看守铁路道口：用以警告车辆驾驶人注意慢行或及时停车。设在无人看守铁路道口以前适当位置。","url":"http://images.juheapi.com/jztk/c1c2subject1/1197.jpg"},{"id":"1218","question":"机动车仪表板上（如图所示）亮表示什么？","answer":"1","item1":"危险报警闪光灯闪烁","item2":"右转向指示灯闪烁","item3":"左转向指示灯闪烁","item4":"车前后位置灯闪烁","explains":"危险报警闪光灯，通常称为\u201c双蹦\u201d（红三角里有个！的标志按扭开关，俗称双闪灯 或双跳灯），是一种提醒其他车辆与行人注意本车发生了特殊情况的信号灯。","url":"http://images.juheapi.com/jztk/c1c2subject1/1218.jpeg"},{"id":"1222","question":"驾驶人在驾驶证核发地车辆管理所管辖区以外居住的，可以向居住地车辆管理所申请换证。","answer":"1","item1":"正确","item2":"错误","item3":"","item4":"","explains":"《机动车驾驶证申领和使用规定》第四十九条：机动车驾驶人户籍迁出原车辆管理所管辖区的，应当向迁入地车辆管理所申请换证。机动车驾驶人在核发地车辆管理所管辖区以外居住的，可以向居住地车辆管理所申请换证。","url":""},{"id":"1227","question":"如图所示，驾驶过程中遇到这种情况时，A车可以长鸣喇叭提醒道路养护车辆暂停喷水。","answer":"2","item1":"","item2":"","item3":"","item4":"","explains":"《中华人民共和国道路交通安全法》第五十四条条明确规定：道路养护车辆、工程作业车进行作业时，在不影响过往车辆通行的前提下，其行驶路线和方向不受交通标志、标线限制，过往车辆和人员应当注意避让。不能鸣喇叭让其停止喷水。","url":"http://images.juheapi.com/jztk/c1c2subject1/1227.jpg"}]
+     * error_code : 0
+     */
+
+    private String reason;
+    private int error_code;
+    private List<ResultBean> result;
+
+    public String getReason() {
+        return reason;
+    }
+
+    public void setReason(String reason) {
+        this.reason = reason;
+    }
+
+    public int getError_code() {
+        return error_code;
+    }
+
+    public void setError_code(int error_code) {
+        this.error_code = error_code;
+    }
+
+    public List<ResultBean> getResult() {
+        return result;
+    }
+
+    public void setResult(List<ResultBean> result) {
+        this.result = result;
+    }
+
+    public static class ResultBean implements Serializable {
+        /**
+         * id : 21
+         * question : 这个标志是何含义？
+         * answer : 4
+         * item1 : 平面交叉路口
+         * item2 : 环行平面交叉
+         * item3 : 注意交互式道路
+         * item4 : 注意分离式道路
+         * explains : 注意分离式道路：用以警告车辆驾驶人注意前方平面交叉的被交道路是分离式道路。
+         * url : http://images.juheapi.com/jztk/c1c2subject1/21.jpg
+         */
+
+        private String id;
+        private String question;
+        private String answer;
+        private String item1;
+        private String item2;
+        private String item3;
+        private String item4;
+        private String explains;
+        private String url;
+
+        public String getId() {
+            return id;
+        }
+
+        public void setId(String id) {
+            this.id = id;
+        }
+
+        public String getQuestion() {
+            return question;
+        }
+
+        public void setQuestion(String question) {
+            this.question = question;
+        }
+
+        public String getAnswer() {
+            return answer;
+        }
+
+        public void setAnswer(String answer) {
+            this.answer = answer;
+        }
+
+        public String getItem1() {
+            return item1;
+        }
+
+        public void setItem1(String item1) {
+            this.item1 = item1;
+        }
+
+        public String getItem2() {
+            return item2;
+        }
+
+        public void setItem2(String item2) {
+            this.item2 = item2;
+        }
+
+        public String getItem3() {
+            return item3;
+        }
+
+        public void setItem3(String item3) {
+            this.item3 = item3;
+        }
+
+        public String getItem4() {
+            return item4;
+        }
+
+        public void setItem4(String item4) {
+            this.item4 = item4;
+        }
+
+        public String getExplains() {
+            return explains;
+        }
+
+        public void setExplains(String explains) {
+            this.explains = explains;
+        }
+
+        public String getUrl() {
+            return url;
+        }
+
+        public void setUrl(String url) {
+            this.url = url;
+        }
+    }
+}

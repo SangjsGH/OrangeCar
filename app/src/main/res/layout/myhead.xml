@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="48dp"
+            android:layout_height="15dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_return"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="背题模式"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/huise"
+            android:layout_alignParentBottom="true"/>
+        <View
+            style="@style/style_line"
+            android:layout_alignParentBottom="true"/>
+</RelativeLayout>

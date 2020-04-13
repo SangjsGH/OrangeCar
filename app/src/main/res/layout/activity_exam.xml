@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <include layout="@layout/myhead"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_num"
+        android:layout_below="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textColor="@color/orange"
+            android:id="@+id/tv_type"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单选题"/>
+        <TextView
+            android:id="@+id/tv_now_num"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:textSize="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5/1999"/>
+
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/exam_viewpager"
+        android:layout_below="@+id/rl_num"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/huise"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:id="@+id/tv_love"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_love_true"
+            android:text="收 藏"
+
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/orange"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

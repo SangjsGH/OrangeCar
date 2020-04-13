@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawer_layout"
+    tools:openDrawer="start">
+
+    <include layout="@layout/activity_index"/>
+
+    <include layout="@layout/activity_side"
+        android:layout_width="255dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"/>
+</androidx.drawerlayout.widget.DrawerLayout>

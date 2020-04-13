@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"/>
+    <LinearLayout
+        android:layout_below="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginTop="100dp"
+                android:id="@+id/rl_suiji"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/img_suiji"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_suiji"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_suiji"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="随机练习"
+                    android:textSize="13sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_love"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/img_love"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/index_love" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_love"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="随机练习"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginTop="50dp"
+                android:id="@+id/rl_shunxu"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/img_shunxu"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/index_exam"/>
+                <TextView
+                    android:id="@+id/tv_shunxu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="顺序做题"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text=" 0 / 400"
+                    android:layout_below="@+id/tv_shunxu"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_exam"
+                android:layout_width="130dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/img_exam"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/index_exam"/>
+                <TextView
+                    android:id="@+id/tv_exam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="86dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="考试模式"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginTop="100dp"
+                android:id="@+id/rl_pinfen"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/img_pinfen"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/index_pingfen"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_pinfen"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="评分标准"
+                    android:textSize="13sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/img_reset"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/index_love"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_reset"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="重置记录"
+                    android:textSize="13sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

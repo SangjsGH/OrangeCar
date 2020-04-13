@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/rl_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingBottom="8dp"
+                    android:textSize="15dp"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="放假看到就看见卡萨丁大叔大婶所实打实大师的方法法国非官方个风格！"/>
+            </RelativeLayout>
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/rl_title"
+                android:layout_centerInParent="true"
+                android:id="@+id/iv_ques"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/recycle_seletion"
+                android:layout_below="@id/iv_ques"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:visibility="gone"
+                android:background="@drawable/shape_background"
+                android:id="@+id/tv_agree"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/recycle_seletion"
+                android:textColor="@color/white"
+                android:text="确认答案"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                />
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_below="@+id/tv_agree"
+                android:id="@+id/rl_jiexi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
+                    <TextView
+                        android:id="@+id/tv_tag1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="15dp"
+                        android:gravity="center"
+                        android:text="试题解析"
+                        android:textSize="13sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginRight="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_tag1"
+                        android:background="@color/border_color"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/tv_tag1"
+                        android:background="@color/border_color"/>
+                </RelativeLayout>
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="【答案】 :"/>
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tv_answer"
+                    android:text="                       A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginTop="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="【解析】 :"/>
+                <org.sufficientlysecure.htmltextview.HtmlTextView
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tv_jiexi"
+                    android:text="                        大苏打实打实打算十大算法算法都是十分大师傅斯蒂芬热帖官方的框架结构"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
