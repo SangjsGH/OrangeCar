@@ -104,6 +104,12 @@ public class MainActivity extends BaseActivity {
                 goToActivity(ExamActivity.class,bundle);
                 break;
             case R.id.rl_exam:
+                Bundle bundle2 = new Bundle();
+                bundle2.putInt("subject",subject);
+                bundle2.putString("model",model);
+                bundle2.putString("testType","rand");
+                bundle2.putInt("type",1);
+                goToActivity(ExamActivity.class,bundle2);
                 break;
             case R.id.rl_random:
                 Bundle bundle1 = new Bundle();
