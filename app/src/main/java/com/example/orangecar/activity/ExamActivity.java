@@ -56,6 +56,9 @@ public class ExamActivity extends BaseActivity {
     private ViewpagerAdapter viewpagerAdapter;
     private List<CarExam.ResultBean> datalist = new ArrayList<>();
     private SpannableString mSpannableString;
+    private int subject=1;
+    private String model;
+    private String testType;
 
 
     @Override
@@ -63,8 +66,18 @@ public class ExamActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exam);
         ButterKnife.bind(this);
-        getdata();
         initview();
+        initData();
+    }
+
+    private void initData() {
+        Bundle bundle=getIntent().getExtras();
+        if (bundle!=null){
+            subject=bundle.getInt("subject",1);
+            model=bundle.getString("model");
+            testType=bundle.getString("testType");
+        }
+        getdata();
     }
 
 
@@ -73,7 +86,7 @@ public class ExamActivity extends BaseActivity {
 
     }
 
-    private void initadapter() {
+    private void initViewPager() {
         for (int i = 0; i < datalist.size(); i++) {
             Selectionfragment selectionfragment = new Selectionfragment();
             Bundle mBundle = new Bundle();
@@ -123,10 +136,10 @@ public class ExamActivity extends BaseActivity {
 
     private void getdata() {
         HashMap<String, String> params = new HashMap<>();
-        params.put("subject", "4");
-        params.put("model", "c1");
-        params.put("key", "f17ab656361087fbe98ec59febf25e5b");
-        params.put("testType", "rand");
+        params.put("subject", subject+"");
+        params.put("model", model);
+        params.put("key", URL.KEY);
+        params.put("testType",testType);
 
         PostUtil.get(this, URL.API, params, new OkHttpClientManager.ResultCallback<String>() {
             @Override
@@ -137,13 +150,15 @@ public class ExamActivity extends BaseActivity {
 
             @Override
             public void onResponse(String response) {
-                String jsonstr = JsonUtils.getData(response);
-                datalist = JsonUtils.jsonToArrayList(jsonstr, CarExam.ResultBean.class);
-                initadapter();
+                if (response!=null){
+                    String jsonstr = JsonUtils.getData(response);
+                    datalist = JsonUtils.jsonToArrayList(jsonstr, CarExam.ResultBean.class);
+                    initViewPager();
+                }
+
             }
         });
     }
-
 
     @OnClick({R.id.img_back, R.id.tv_love})
     public void onViewClicked(View view) {

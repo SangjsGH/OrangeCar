@@ -46,7 +46,8 @@ public class MainActivity extends BaseActivity {
     RelativeLayout rlTruck;
     @BindView(R.id.rl_passenger)
     RelativeLayout rlPassenger;
-
+    private int subject=1;
+    private String model="c1";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,14 +61,17 @@ public class MainActivity extends BaseActivity {
             rlCar.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_bottom_background));
             rlTruck.setBackgroundColor(getResources().getColor(R.color.init_color));
             rlPassenger.setBackgroundColor(getResources().getColor(R.color.init_color));
+            model="c1";
         }else if (pos==2){
             rlTruck.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_bottom_background));
             rlPassenger.setBackgroundColor(getResources().getColor(R.color.init_color));
             rlCar.setBackgroundColor(getResources().getColor(R.color.init_color));
+            model="a2";
         }else if (pos==3){
             rlPassenger.setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_bottom_background));
             rlTruck.setBackgroundColor(getResources().getColor(R.color.init_color));
             rlCar.setBackgroundColor(getResources().getColor(R.color.init_color));
+            model="b1";
         }
     }
 
@@ -75,9 +79,11 @@ public class MainActivity extends BaseActivity {
         if (pos==1){
             ctvSubjectOne.setChecked(true);
             ctvSubjectFour.setChecked(false);
+            subject=1;
         }else {
             ctvSubjectOne.setChecked(false);
             ctvSubjectFour.setChecked(true);
+            subject=4;
         }
     }
     @OnClick({R.id.ctv_subject_one, R.id.ctv_subject_four, R.id.rl_order, R.id.rl_exam, R.id.rl_random,
@@ -91,11 +97,20 @@ public class MainActivity extends BaseActivity {
                 setTopSelect(2);
                 break;
             case R.id.rl_order:
-                goToActivity(ExamActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("subject",subject);
+                bundle.putString("model",model);
+                bundle.putString("testType","order");
+                goToActivity(ExamActivity.class,bundle);
                 break;
             case R.id.rl_exam:
                 break;
             case R.id.rl_random:
+                Bundle bundle1 = new Bundle();
+                bundle1.putInt("subject",subject);
+                bundle1.putString("model",model);
+                bundle1.putString("testType","rand");
+                goToActivity(ExamActivity.class,bundle1);
                 break;
             case R.id.rl_love:
                 break;
