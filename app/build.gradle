@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
 
 android {
     compileSdkVersion 29
@@ -45,5 +46,12 @@ dependencies {
     implementation 'org.sufficientlysecure:html-textview:3.3'
     //圆形image
     implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'org.greenrobot:greendao:3.2.2' // 添加库
+    implementation 'com.github.yuweiguocn:GreenDaoUpgradeHelper:v2.2.1'
+}
 
+greendao {
+    schemaVersion 5
+    daoPackage 'com.example.orangecar.greendao'
+    targetGenDir 'src/main/java'
 }

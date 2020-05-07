@@ -13,6 +13,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.orangecar.R;
 import com.example.orangecar.base.BaseActivity;
+import com.example.orangecar.mode.Collect;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -119,6 +120,7 @@ public class MainActivity extends BaseActivity {
                 goToActivity(ExamActivity.class,bundle1);
                 break;
             case R.id.rl_love:
+                goToActivity(CollectActivity.class);
                 break;
             case R.id.rl_exam_card:
                 break;

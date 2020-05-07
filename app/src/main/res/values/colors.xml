@@ -9,4 +9,5 @@
     <color name="border_color">#ccc</color>
     <color name="gray">#B2B9B6</color>
     <color name="init_color">#F9F9F9</color>
+    <color name="blue">#478CD1</color>
 </resources>

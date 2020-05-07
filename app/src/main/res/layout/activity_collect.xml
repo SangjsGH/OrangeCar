@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/myhead"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/index_viewpager"
+        android:layout_below="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_btn"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:background="#42abe4"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="查看解析"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_delete"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:layout_height="46dp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/border_color"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2dp"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/collect_delect"
+                android:text="删除"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/noitemview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/noitem_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_wsj"/>
+
+        <TextView
+            android:id="@+id/noitem_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="网络异常"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_do"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_order_bg"
+            android:layout_marginTop="26dp"
+            android:text="我要练习"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,5 +1,6 @@
 package com.example.orangecar.activity;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,9 +22,12 @@ import androidx.viewpager.widget.ViewPager;
 import com.example.orangecar.R;
 import com.example.orangecar.adapter.ViewpagerAdapter;
 import com.example.orangecar.base.BaseActivity;
+import com.example.orangecar.base.MyApplication;
 import com.example.orangecar.constant.URL;
 import com.example.orangecar.fragment.Selectionfragment;
+import com.example.orangecar.greendao.CollectDao;
 import com.example.orangecar.mode.CarExam;
+import com.example.orangecar.mode.Collect;
 import com.example.orangecar.okhttp.OkHttpClientManager;
 import com.example.orangecar.okhttp.PostUtil;
 import com.example.orangecar.until.JsonUtils;
@@ -64,6 +69,7 @@ public class ExamActivity extends BaseActivity {
     private String testType;
     private int type;
     private int second = 7200;//考试时间
+    private CollectDao collectDao;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -80,6 +86,7 @@ public class ExamActivity extends BaseActivity {
 
 
     private void initview() {
+        collectDao= MyApplication.getDaoSession().getCollectDao();
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
             subject = bundle.getInt("subject", 1);
@@ -192,6 +199,31 @@ public class ExamActivity extends BaseActivity {
                 finish();
                 break;
             case R.id.tv_love:
+                if (datalist.size() != 0) {
+                    int currentItem = examViewpager.getCurrentItem();
+                    CarExam.ResultBean exam = datalist.get(currentItem);
+                    List<Collect> list = collectDao.queryBuilder().where(CollectDao.Properties.Id.eq(exam.getId())).list();
+                    if (list != null && list.size() >= 1) {
+                        collectDao.delete(list.get(0));
+                        Toast.makeText(this, "取消收藏成功", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Collect collect = new Collect();
+                        collect.setCid(System.currentTimeMillis());
+                        collect.setId(exam.getId());
+                        collect.setQuestion(exam.getQuestion());
+                        collect.setAnswer(exam.getAnswer());
+                        collect.setItem1(exam.getItem1());
+                        collect.setItem2(exam.getItem2());
+                        collect.setItem3(exam.getItem3());
+                        collect.setItem4(exam.getItem4());
+                        collect.setExplains(exam.getExplains());
+                        collect.setUrl(exam.getUrl());
+                        collectDao.insert(collect);
+                        showtoast("收藏成功");
+                    }
+                } else {
+                    Toast.makeText(this, "暂无试题信息可收藏！", Toast.LENGTH_SHORT).show();
+                }
                 break;
         }
     }
